@@ -30,6 +30,7 @@ export default function App() {
 
   return (
     <main className="mt-20 flex min-h-screen w-screen flex-col items-center justify-start">
+      <p className="bg-red-500">Hi</p>
       <HCaptcha
         sitekey={import.meta.env.VITE_HCAPTCHA_SITE_KEY}
         onVerify={onVerify}
