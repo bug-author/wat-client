@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/:filename" element={<App />} />
+          <Route path="/:cacheKey" element={<App />} />
         </Routes>
       </Layout>
     </BrowserRouter>
