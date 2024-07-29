@@ -25,6 +25,10 @@ export default function App() {
         nftUrl: resJson.nftUrl,
       });
       toast.success("Archive Created!");
+    } else if (res.status === 406) {
+      toast.error(
+        "Verification timed out, please try again by capturing a screenshot."
+      );
     } else {
       toast.error("Something went wrong, please try again!");
     }
